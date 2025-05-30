@@ -1,0 +1,20 @@
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+def plot_y_equals_2x():
+    x = np.linspace(-10, 10, 100)  # Generate 100 points between -10 and 10
+    y = 2 * x  # Calculate y = 2x
+
+    plt.plot(x, y, label="y = 2x")
+    plt.title("Plot of y = 2x")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.axhline(0, color='black',linewidth=0.5)  # Add x-axis
+    plt.axvline(0, color='black',linewidth=0.5)  # Add y-axis
+    plt.grid(color = 'gray', linestyle = '--', linewidth = 0.5)
+    plt.legend()
+    plt.show()
+
+# Call the function to display the plot
+plot_y_equals_2x()
